@@ -16,7 +16,7 @@ from .callbacks import LambdaCallback
 
 from .. import backend as K
 
-if K.backend() == 'tensorflow' and not K.tensorflow_backend._is_tf_1():
-    from .tensorboard_v2 import TensorBoard
-else:
-    from .tensorboard_v1 import TensorBoard
+#if K.backend() == 'tensorflow' and not K.tensorflow_backend._is_tf_1():
+from .tensorboard_v2 import TensorBoard
+
+from .tensorboard_v1 import TensorBoard
